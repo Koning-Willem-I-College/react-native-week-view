@@ -123,13 +123,15 @@ const Event = ({
   );
 };
 
-const eventPropType = PropTypes.shape({
+export const eventPropType = PropTypes.shape({
   color: PropTypes.string,
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   description: PropTypes.string,
   startDate: PropTypes.instanceOf(Date).isRequired,
   endDate: PropTypes.instanceOf(Date).isRequired,
 });
+
+
 
 const positionPropType = PropTypes.shape({
   height: PropTypes.number,
