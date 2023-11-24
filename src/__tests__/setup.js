@@ -1,5 +1,5 @@
 // Mock reanimated
-require('react-native-reanimated/lib/reanimated2/jestUtils').setUpTests();
+require('react-native-reanimated-latest/lib/reanimated2/jestUtils').setUpTests();
 
 // Mock Animated
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');

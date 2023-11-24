@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 import Animated, {
   useAnimatedStyle,
   withTiming,
-} from 'react-native-reanimated';
+} from 'react-native-reanimated-latest';
 import styles from './Times.styles';
 import { useVerticalDimensionContext } from '../utils/VerticalDimContext';
 

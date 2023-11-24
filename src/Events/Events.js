@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import Animated, {
   useAnimatedStyle,
   withTiming,
-} from 'react-native-reanimated';
+} from 'react-native-reanimated-latest';
 import moment from 'moment';
 import memoizeOne from 'memoize-one';
 

@@ -7,7 +7,7 @@ import Animated, {
   useSharedValue,
   useAnimatedScrollHandler,
   runOnJS,
-} from 'react-native-reanimated';
+} from 'react-native-reanimated-latest';
 
 const HeaderRefContext = React.createContext(null);
 

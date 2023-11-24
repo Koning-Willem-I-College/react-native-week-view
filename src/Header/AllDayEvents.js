@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Animated, {
   useAnimatedStyle,
   withTiming,
-} from 'react-native-reanimated';
+} from 'react-native-reanimated-latest';
 
 import AllDayEvent from './AllDayEvent';
 import styles from './AllDayEvents.styles';

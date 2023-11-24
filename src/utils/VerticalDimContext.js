@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { useDerivedValue } from 'react-native-reanimated';
+import { useDerivedValue } from 'react-native-reanimated-latest';
 import { Gesture } from 'react-native-gesture-handler';
 
 export const VerticalDimensionContext = React.createContext(null);

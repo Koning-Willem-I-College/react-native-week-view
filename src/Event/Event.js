@@ -8,7 +8,7 @@ import Animated, {
   withSpring,
   runOnJS,
   useDerivedValue,
-} from 'react-native-reanimated';
+} from 'react-native-reanimated-latest';
 import styles, { circleStyles } from './Event.styles';
 import {
   EventPropType,

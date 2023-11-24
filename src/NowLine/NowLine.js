@@ -4,7 +4,7 @@ import Animated, {
   useAnimatedStyle,
   useDerivedValue,
   withTiming,
-} from 'react-native-reanimated';
+} from 'react-native-reanimated-latest';
 import PropTypes from 'prop-types';
 
 import { minutesInDay } from '../utils/dates';

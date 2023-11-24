@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { View, FlatList } from 'react-native';
-import { useDerivedValue } from 'react-native-reanimated';
+import { useDerivedValue } from 'react-native-reanimated-latest';
 
 import AllDayEvents, { ALL_DAY_EVENT_HEIGHT } from './AllDayEvents';
 import { calculateDaysArray, availableNumberOfDays } from '../utils/dates';
