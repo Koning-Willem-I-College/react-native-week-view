@@ -5,7 +5,7 @@ import moment from 'moment';
 import memoizeOne from 'memoize-one';
 
 import NowLine from '../NowLine/NowLine';
-import Event from '../Event/Event';
+import Event, {eventPropType} from '../Event/Event';
 import {
   CONTAINER_HEIGHT,
   CONTAINER_WIDTH,
@@ -305,8 +305,17 @@ class Events extends PureComponent {
 
 Events.propTypes = {
   numberOfDays: PropTypes.oneOf(availableNumberOfDays).isRequired,
-  eventsByDate: PropTypes.objectOf(PropTypes.arrayOf(Event.propTypes.event))
-    .isRequired,
+  eventsByDate: PropTypes.objectOf(
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        ref: eventPropType.isRequired,
+        box: PropTypes.shape({
+          startDate: PropTypes.instanceOf(Date).isRequired,
+          endDate: PropTypes.instanceOf(Date).isRequired,
+        }),
+      }),
+    ),
+  ).isRequired,
   initialDate: PropTypes.string.isRequired,
   hoursInDisplay: PropTypes.number.isRequired,
   timeStep: PropTypes.number.isRequired,
